@@ -89,6 +89,8 @@ class TableAndCollectionVc: UIViewController {
         self.edgesForExtendedLayout = [] //表示从导航距离开始,默认是all
 
 
+
+
 //        注释掉系统的自动规避遮挡，自定在定义frame的时候设置
         //ios13
 //        if #available(iOS 11, *) {
@@ -104,7 +106,9 @@ class TableAndCollectionVc: UIViewController {
 
         //初始化左侧表格数据
         for i in 1..<35 {
+
             self.tableViewData.append("分类\(i)")
+
         }
 
         //初始化右侧表格数据
