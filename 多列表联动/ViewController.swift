@@ -7,13 +7,22 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
     }
 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
+        if indexPath.row == 0 {
+
+        }else if indexPath.row == 1 {
+            navigationController?.pushViewController(TableAndCollectionVc(), animated: true)
+        }else{
+            navigationController?.pushViewController(NaviTestViewController(), animated: true)
+        }
+    }
 }
 

@@ -13,6 +13,13 @@
 		579CFBAF272925D300AFF2EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 579CFBAD272925D300AFF2EB /* Main.storyboard */; };
 		579CFBB1272925D500AFF2EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 579CFBB0272925D500AFF2EB /* Assets.xcassets */; };
 		579CFBB4272925D500AFF2EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 579CFBB2272925D500AFF2EB /* LaunchScreen.storyboard */; };
+		579CFBBC272926C400AFF2EB /* TableAndCollectionVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579CFBBB272926C400AFF2EB /* TableAndCollectionVc.swift */; };
+		579CFBBF2729294100AFF2EB /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579CFBBE2729294100AFF2EB /* TableViewCell.swift */; };
+		579CFBC127292A4500AFF2EB /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579CFBC027292A4500AFF2EB /* CollectionViewCell.swift */; };
+		579CFBC327292A8300AFF2EB /* CollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579CFBC227292A8300AFF2EB /* CollectionViewModel.swift */; };
+		579CFBC527292BC100AFF2EB /* CollectionViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579CFBC427292BC100AFF2EB /* CollectionViewHeader.swift */; };
+		579CFBC72729325F00AFF2EB /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 579CFBC62729325F00AFF2EB /* image.png */; };
+		579CFBCA2729507700AFF2EB /* NaviTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579CFBC92729507700AFF2EB /* NaviTestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		579CFBB0272925D500AFF2EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		579CFBB3272925D500AFF2EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		579CFBB5272925D500AFF2EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		579CFBBB272926C400AFF2EB /* TableAndCollectionVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableAndCollectionVc.swift; sourceTree = "<group>"; };
+		579CFBBE2729294100AFF2EB /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		579CFBC027292A4500AFF2EB /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		579CFBC227292A8300AFF2EB /* CollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewModel.swift; sourceTree = "<group>"; };
+		579CFBC427292BC100AFF2EB /* CollectionViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewHeader.swift; sourceTree = "<group>"; };
+		579CFBC62729325F00AFF2EB /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
+		579CFBC92729507700AFF2EB /* NaviTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviTestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +70,38 @@
 		579CFBA6272925D300AFF2EB /* 多列表联动 */ = {
 			isa = PBXGroup;
 			children = (
+				579CFBC82729504D00AFF2EB /* 导航遮挡问题 */,
+				579CFBBD272926EA00AFF2EB /* T&C */,
 				579CFBA7272925D300AFF2EB /* AppDelegate.swift */,
 				579CFBA9272925D300AFF2EB /* SceneDelegate.swift */,
 				579CFBAB272925D300AFF2EB /* ViewController.swift */,
 				579CFBAD272925D300AFF2EB /* Main.storyboard */,
+				579CFBC62729325F00AFF2EB /* image.png */,
 				579CFBB0272925D500AFF2EB /* Assets.xcassets */,
 				579CFBB2272925D500AFF2EB /* LaunchScreen.storyboard */,
 				579CFBB5272925D500AFF2EB /* Info.plist */,
 			);
 			path = "多列表联动";
+			sourceTree = "<group>";
+		};
+		579CFBBD272926EA00AFF2EB /* T&C */ = {
+			isa = PBXGroup;
+			children = (
+				579CFBBB272926C400AFF2EB /* TableAndCollectionVc.swift */,
+				579CFBBE2729294100AFF2EB /* TableViewCell.swift */,
+				579CFBC027292A4500AFF2EB /* CollectionViewCell.swift */,
+				579CFBC227292A8300AFF2EB /* CollectionViewModel.swift */,
+				579CFBC427292BC100AFF2EB /* CollectionViewHeader.swift */,
+			);
+			path = "T&C";
+			sourceTree = "<group>";
+		};
+		579CFBC82729504D00AFF2EB /* 导航遮挡问题 */ = {
+			isa = PBXGroup;
+			children = (
+				579CFBC92729507700AFF2EB /* NaviTestViewController.swift */,
+			);
+			path = "导航遮挡问题";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +164,7 @@
 				579CFBB4272925D500AFF2EB /* LaunchScreen.storyboard in Resources */,
 				579CFBB1272925D500AFF2EB /* Assets.xcassets in Resources */,
 				579CFBAF272925D300AFF2EB /* Main.storyboard in Resources */,
+				579CFBC72729325F00AFF2EB /* image.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +175,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				579CFBBF2729294100AFF2EB /* TableViewCell.swift in Sources */,
+				579CFBCA2729507700AFF2EB /* NaviTestViewController.swift in Sources */,
 				579CFBAC272925D300AFF2EB /* ViewController.swift in Sources */,
+				579CFBC327292A8300AFF2EB /* CollectionViewModel.swift in Sources */,
+				579CFBC127292A4500AFF2EB /* CollectionViewCell.swift in Sources */,
+				579CFBBC272926C400AFF2EB /* TableAndCollectionVc.swift in Sources */,
+				579CFBC527292BC100AFF2EB /* CollectionViewHeader.swift in Sources */,
 				579CFBA8272925D300AFF2EB /* AppDelegate.swift in Sources */,
 				579CFBAA272925D300AFF2EB /* SceneDelegate.swift in Sources */,
 			);
